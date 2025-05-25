@@ -17,6 +17,8 @@ h1, h2 {
     ;
 }
 header {
+    background-color: var(--light-blue);
+    padding: 1rem 0.5rem;
     display: flex;
      text-align: center;
      align-items: center;
@@ -24,6 +26,7 @@ header {
      text-transform: capitalize;
      margin-bottom: 5rem;
     img {
+        border-radius: 100%;
         width: 15%;
         height: 15;
        
@@ -37,7 +40,7 @@ footer {
 main {
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    /* gap: 5rem; */
     text-align: center;
 
 }
@@ -104,11 +107,11 @@ button {
   position: relative;
   border-radius: 8px;
   background: var(--yellow);
-  padding: 16px 32px;
+  padding:0.5rem 0.8rem;
   color: white;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   font-size: 1.3rem;
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
@@ -150,11 +153,13 @@ button {
     
     
     text-align: start;
+    font-size: 1.4rem;
     text-transform: capitalize;
     button {
         
         margin-top: 2rem;
-        align-self: start;
+        /* align-self: start; */
+        /* text-align: center; */
         font-size: 1.2rem;
     }
     img {
@@ -168,6 +173,21 @@ button {
 }
  
 
+
+
+
+/* voted
+------------------------------------------ */
+.voted {
+    background-color: var(--light-blue);
+    padding: 2rem;
+
+    img {
+        margin: auto;
+        max-width: 60%;
+        border-radius: 50%;
+    }
+}
 
 /* THE FALL
 ------------------------------------ */
@@ -216,11 +236,17 @@ li {
 
 /* ACCORDIAN
 ------------------------------------ */
+.step-to-success {
+    margin: 5rem 0;
+    padding: 3rem 0;
+    background-color: var(--light-blue);
+}
 .accordian {
     
+    
     border-radius: 1rem;
-    padding: 1rem;
-    border: solid var(--light-blue) 2px;
+    padding: 0.5rem;
+    border: solid var(--text) 2px;
 
     .accordian-header {
         img {
@@ -245,7 +271,7 @@ li {
    
 }
 .accordian.active {
-    background-color: var(--light-blue);
+    background-color:white;
     
     .accordian-header {
         img {
@@ -288,9 +314,11 @@ li {
 /* TESTIMONIALS
 ------------------------------------ */
 
+
 /* FINAL CTA
 ------------------------------------ */
 .cta {
+    margin: 3rem 0;
     padding: 1rem;
     p {
         margin-bottom: 2rem;

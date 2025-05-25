@@ -2,7 +2,7 @@
 :root{
     --yellow: #ee9e15;
     --text: #050F36;
-    --light-blue: #9ea7cf ;
+    --light-blue: #8eccff ;
     --Purple-950: hsl(292, 42%, 14%);
 }
 
@@ -15,7 +15,7 @@ body {
 h1, h2 {
     font-weight: bold;
     text-transform: capitalize;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-underline-offset: 0.3rem;
 }
 header {
@@ -54,11 +54,12 @@ section, article {
 }
 hr {
     margin: 1rem 0;
-    background-color: var(--light-blue);
+    background-color: var(--text);
 }
 button {
     text-transform: uppercase;
     padding: 0.4rem 0.6rem;
+    align-self: center;
     
 
 }
@@ -114,7 +115,7 @@ button {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
@@ -170,7 +171,8 @@ button {
         margin-top: -4rem;
     }
     button {
-        font-size: 1.3rem;
+        /* font-size: 1.1rem; */
+        align-self: flex-start;
     }
 }
  
@@ -183,6 +185,10 @@ button {
 .voted {
     background-color: var(--light-blue);
     padding: 2rem;
+    p {
+        font-size: 1.3rem;
+        opacity: 0.5;
+    }
 
     img {
         margin: auto;
@@ -216,6 +222,10 @@ background: linear-gradient(180deg, rgba(31, 21, 21, 1) 0%, rgba(255, 255, 255, 
 li {
     margin-bottom: 1rem;
 }
+.hat {
+    width: 5rem;
+    margin: auto;
+}
 .success-list {
     list-style-type: none;
     li {
@@ -235,6 +245,9 @@ li {
         background-size: contain;
     }
 }
+.kid {
+    margin-top: 2rem;
+}
 
 /* ACCORDIAN
 ------------------------------------ */
@@ -245,7 +258,7 @@ li {
 }
 .accordian {
     
-    
+    text-wrap:inherit;
     border-radius: 1rem;
     padding: 0.5rem;
     border: solid var(--text) 2px;
@@ -258,7 +271,7 @@ li {
     }
 }
 .accordian-container{
-    font-size: 1.1rem;
+    /* font-size: 0.9rem; */
     display: flex;
     padding: 1rem;
     flex-direction: column;
@@ -268,13 +281,15 @@ li {
     overflow: hidden;
     text-align: start;
     padding: 0 1rem;
+    background: none;
     /* padding-bottom: 1rem; */
-    transition: height 600ms ease-in-out;
+    transition: height 400ms ease-in-out, background 400ms;
+
    }
    
 }
 .accordian.active {
-    background-color:white;
+    background-color:var(--yellow);
     
     .accordian-header {
         img {
@@ -290,6 +305,9 @@ li {
         height: fit-content;
         /* padding: 1rem; */
     }
+}
+h3 {
+    font-size: 1.2rem;
 }
 .accordian-header {
     margin-bottom: 1rem;

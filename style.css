@@ -2,7 +2,7 @@
 :root{
     --yellow: #ee9e15;
     --text: #050F36;
-    --light-blue: #6c7cc5 ;
+    --light-blue: #9ea7cf ;
     --Purple-950: hsl(292, 42%, 14%);
 }
 
@@ -14,7 +14,9 @@ body {
 }
 h1, h2 {
     font-weight: bold;
-    ;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
 }
 header {
     background-color: var(--light-blue);
@@ -45,7 +47,7 @@ main {
 
 }
 section, article {
-    padding: 0 1.4rem;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     gap:0.7rem
@@ -258,6 +260,7 @@ li {
 .accordian-container{
     font-size: 1.1rem;
     display: flex;
+    padding: 1rem;
     flex-direction: column;
     gap: 3rem;
    p {

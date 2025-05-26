@@ -165,7 +165,7 @@ button {
     text-transform: capitalize;
     button {
         
-        margin-top: 2rem;
+        margin-top: 1rem;
         /* align-self: start; */
         /* text-align: center; */
         font-size: 1.2rem;
@@ -183,27 +183,29 @@ button {
  .age {
     /* letter-spacing: 0.2rem; */
  }
-.benefits-grid {
+.benefits-list{
     font-size: 1rem;
-    text-align: center;
-    margin-right: -1.7rem;
-    margin-left: -1.7rem;
-    margin-top: 5%;
-    margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 30% 5rem;
-    gap: 1rem;
-    place-items: center;
-    img {
-        width: 30%;;
+    /* text-align: center; */
+    
+    /* margin-top: 5%; */
+    margin-bottom: 0rem;
+    padding: 0;
+    
+    padding-left: 1rem;
+
+    li {
+        position: relative;
+        margin: 0.5rem;
     }
+   
+  
 }
+  
 .top-of-hero {
     color: rgb(97, 63, 0);
     text-transform: none;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: -1rem;
 }
 .target {
@@ -215,20 +217,16 @@ button {
 .bold {
     font-weight: bold;
 }
-.scarcity {
-    margin-top: 0.9rem;
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
-    color: rgb(97, 63, 0);
-    text-align: start;
-}
+
 .hero-img {
         z-index: -10;
         width: 100%;
         margin-top: -80%;
         margin-left: auto;
     }
-
+a {
+    width: fit-content;
+}
 
 
 /* voted

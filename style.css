@@ -26,7 +26,7 @@ header {
      align-items: center;
      font-size: 1.2rem;
      text-transform: capitalize;
-     margin-bottom: 5rem;
+     margin-bottom: 2rem;
     img {
         border-radius: 100%;
         width: 15%;
@@ -152,9 +152,14 @@ button {
 
 /* HERO
 ------------------------------------------------ */
+
 .hero {
     
-    
+    /* padding-right: 10%; */
+    hr {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
     text-align: start;
     font-size: 1.4rem;
     text-transform: capitalize;
@@ -175,8 +180,54 @@ button {
         align-self: flex-start;
     }
 }
- 
-
+ .age {
+    /* letter-spacing: 0.2rem; */
+ }
+.benefits-grid {
+    font-size: 1rem;
+    text-align: center;
+    margin-right: -1.7rem;
+    margin-left: -1.7rem;
+    margin-top: 5%;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 5rem;
+    gap: 1rem;
+    place-items: center;
+    img {
+        width: 30%;;
+    }
+}
+.top-of-hero {
+    color: rgb(97, 63, 0);
+    text-transform: none;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: -1rem;
+}
+.target {
+    font-weight: 600;
+}
+.underline {
+    text-decoration: underline;
+}
+.bold {
+    font-weight: bold;
+}
+.scarcity {
+    margin-top: 0.9rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    color: rgb(97, 63, 0);
+    text-align: start;
+}
+.hero-img {
+        z-index: -10;
+        width: 100%;
+        margin-top: -80%;
+        margin-left: auto;
+    }
 
 
 

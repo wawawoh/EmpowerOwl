@@ -158,7 +158,10 @@ a {
 
 /* HERO
 ------------------------------------------------ */
-
+.desktop-hero {
+    margin-top: -16rem;
+    z-index: -10;
+}
 .hero {
     
     /* padding-right: 10%; */
@@ -166,7 +169,7 @@ a {
         margin-bottom: 0;
         margin-top: 0;
     }
-    text-align: start;
+    text-align: center;
     font-size: 1.4rem;
     text-transform: capitalize;
     button {
@@ -225,12 +228,7 @@ a {
     font-weight: bold;
 }
 
-.hero-img {
-        z-index: -10;
-        width: 100%;
-        margin-top: -80%;
-        margin-left: auto;
-    }
+
 a {
     width: fit-content;
 }
@@ -407,4 +405,84 @@ h3 {
 button {
     margin: auto;
     align-self: center;
+}
+
+@media screen and (min-width:1110px) {
+    header {
+        height: 4%;
+        justify-content: space-around;
+        img {
+            width: 4rem;
+
+        }
+    }
+    a {
+        margin-top: 2rem;
+        align-self: stretch;
+    }
+    button {
+        align-self: stretch;
+    }
+    .hero-img {
+        display: none;
+    }
+    .hero {
+        text-align: center;
+        
+        position: relative;
+        background: none;
+
+
+        
+    }
+    .hero-and-image {
+        display: flex;
+        align-items: center;
+        padding: 5%;
+        padding-top: 0;
+        /* margin-top: -10rem; */
+    }
+    .desktop-hero {
+        height: 600px;
+        margin-top: -10rem;
+        z-index: -10;
+        aspect-ratio: 1 / 1;
+        object-position: center;
+        object-fit: cover;
+        
+    }
+    .step-to-success {
+        border-radius: 2rem;
+    }
+    .voted {
+        img {
+            width: 20%;
+        }
+    }
+    .step-to-success-and-kid {
+        margin-top: 10%;
+        /* background-color: var(--light-blue); */
+        padding: 1rem;
+        
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        .kid {
+            margin: 1rem;
+            width: 40%;
+            border: solid 2px var(--text);
+            border-radius: 2rem;
+
+            
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    .the-rise, .the-fall {
+        padding: 20%;
+        padding-top: 0;
+    }
+    button, .front {
+        align-self: stretch !important
+    }
 }

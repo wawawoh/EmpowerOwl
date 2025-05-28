@@ -159,7 +159,7 @@ a {
 /* HERO
 ------------------------------------------------ */
 .desktop-hero {
-    margin-top: -16rem;
+    margin-top: -10rem;
     z-index: -10;
 }
 .hero {
@@ -199,16 +199,31 @@ a {
     
     /* margin-top: 5%; */
     margin-bottom: 1rem;
-    padding: 0;
+    padding: 0 3rem;
+    list-style-type: none;
     
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
 
     li {
         position: relative;
         /* margin: 0.5rem; */
-        margin-bottom: 0;
+        margin-bottom: 0.5rem;
         font-size: 0.9rem;
         font-weight: bold;
+        text-align: left;
+    }
+    li::before {
+        width: 1.5rem;
+        
+        aspect-ratio: 1 / 1;
+        content: "";
+        background-image: url(/images/tick.svg);
+        
+        position: absolute;
+        left: -3rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
     }
    
   
